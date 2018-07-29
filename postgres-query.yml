@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  postgres-query:
+    lang: go
+    handler: ./postgres-query
+    image: art-hq.intranet.qualys.com:5001/k8s.gcr.io/postgres-query
